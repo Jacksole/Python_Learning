@@ -9,8 +9,14 @@ import nltk.classify.util
 from nltk.classify import NaiveBayesClassifier
 
 #Loading Creds  
-with open (r'C:\Users\ljack099\AppData\Local\Programs\Python\Python36-32\Python Twitter\Naughty_n_Nice\twitter_auth.json') as f:
-	keys = json.load(f)
+##SET UP TWITTER
+with open('/path/to/your/twitter_auth.json') as f:
+    keys = json.load(f)
+
+## Or On Windows ##
+#with open (r'C:\Users\username\path_to\twitter_auth.json')
+#	keys = json.load(f)
+
 
 consumer_key = keys['consumer_key']
 consumer_secret = keys['consumer_secret']
